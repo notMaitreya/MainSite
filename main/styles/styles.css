@@ -2,56 +2,70 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #8c8e91;
+    background-color: #6982a8;
+    color: aliceblue;
 }
 header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-header img {
+#mainIMG {
     display: block;
-    margin: auto;
     object-fit: cover;
-    object-position: center 50%;
-    border-radius: 0%;
+    margin-bottom: -20px;
     width: 100%;
-    height: 30vh;
-    max-height: 280px;
+    height: 100%;
+    max-height: 150px;
+    max-width: 2000px;
 }
 header h1 {
     margin: auto;
     font-size: 1.5rem;
-    color: #343a40;
+    color: #000000;
 }
 header nav {
     justify-content: space-between;
     align-items: center;
 }
 #logo {
-    display: block;
+    display: flex;
     object-fit: cover;
+    margin-bottom: -70px;
     width: 100%;
     height: 100%;
     max-height: 180px;
     max-width: 180px;
+    border: 1px solid #dee2e6;
     border-radius: 100%;
+    background-color: #747474;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 h2 {
     text-align: center;
+    text-decoration: underline;
     justify-content: center;
     display: flex;
     font-size: 1.25rem;
-    color: #343a40;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 #nav-links {
     display: flexbox;
-    justify-content: space-between;
+    margin: auto;
+    justify-content: center;
     border: .5px solid #dee2e6;
     border-radius: 0.25rem;
+    width: 40%;
     background-color: #696868;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+#nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+#nav-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 #container {
     display: flex;
@@ -81,10 +95,14 @@ h2 {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    max-height: 200px;
+    max-height: 150px;
     max-width: 400px;
     border-radius: 0%;
     gap: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background-color: #000000;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 #aboutMe {
     display: flex;
@@ -131,8 +149,9 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
+
+
 
 #contact-info {
     flex-direction: column;
@@ -143,6 +162,14 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+#links a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+#links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 h4 {
     text-align: center;
     margin-bottom: 0.5rem;
