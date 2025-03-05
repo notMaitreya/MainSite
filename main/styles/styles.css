@@ -3,8 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #9ea0a3;
     color: aliceblue;
@@ -12,24 +11,13 @@ body {
 header {
     display: flex;
     flex-direction: column;
-}
-#mainIMG {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-header h1 {
     margin: auto;
-    font-size: 1.5rem;
-    color: #000000;
 }
 header nav {
     display: flex;
     margin: auto;
     justify-content: space-between;
     flex-direction: row;
-    gap: 60rem;
     align-items: center;
 }
 h2 {
@@ -49,10 +37,9 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin: auto;
+    margin-left: 320px;
 }
 #nav-links a {
-    margin: auto;
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color */
     text-align: center;
