@@ -4,7 +4,7 @@ var currentImg = 0; // index of the first image
 const interval = 3000;
 var timer = setInterval(changeSlide, interval);
 
-function changeSlide(n) {
+function changeSlide(n) { //function that controls the slider
     for (var i = 0; i < imgs.length; i++) { // reset
       imgs[i].style.opacity = 0;
       dots[i].className = dots[i].className.replace(' active', '');
