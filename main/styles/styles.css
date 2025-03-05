@@ -1,23 +1,23 @@
 body {
+    background-image: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/11/15-Presentation-Background-Examples1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #6982a8;
+    background-color: #9ea0a3;
     color: aliceblue;
 }
 header {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 #mainIMG {
     display: block;
     object-fit: cover;
-    margin-bottom: -20px;
     width: 100%;
     height: 100%;
-    max-height: 150px;
-    max-width: 2000px;
 }
 header h1 {
     margin: auto;
@@ -27,19 +27,6 @@ header h1 {
 header nav {
     justify-content: space-between;
     align-items: center;
-}
-#logo {
-    display: flex;
-    object-fit: cover;
-    margin-bottom: -70px;
-    width: 100%;
-    height: 100%;
-    max-height: 180px;
-    max-width: 180px;
-    border: 1px solid #dee2e6;
-    border-radius: 100%;
-    background-color: #747474;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 h2 {
     text-align: center;
@@ -51,14 +38,10 @@ h2 {
     margin-bottom: 0.5rem;
 }
 #nav-links {
-    display: flexbox;
+    display: flex;
+    padding-top: 30px;
     margin: auto;
-    justify-content: center;
-    border: .5px solid #dee2e6;
-    border-radius: 0.25rem;
-    width: 40%;
-    background-color: #696868;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    justify-content: space-between;
 }
 #nav-links a {
     margin: auto;
@@ -69,11 +52,10 @@ h2 {
 #nav-links a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
-#container {
+#slider {
     display: flex;
+    flex-direction: column;
     margin: auto;
-    justify-content: space-between;
-    flex-direction: row;
     align-items: center;
     padding: 1rem;
 }
@@ -97,8 +79,8 @@ h2 {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    max-height: 150px;
-    max-width: 400px;
+    max-height: 300px;
+    max-width: 700px;
     border-radius: 0%;
     gap: 1rem;
     border: 1px solid #dee2e6;
@@ -106,15 +88,7 @@ h2 {
     background-color: #000000;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-#aboutMe {
-    display: flex;
-    text-align: center;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 #cardSUM {
     margin: auto;
     display: flex;
@@ -128,10 +102,8 @@ h2 {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    position: relative;
     padding: 1rem;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
@@ -149,6 +121,7 @@ h2 {
 }
 #skills {
     display: flex;
+    margin-top: -60px;
     flex-direction: column;
     align-items: center;
 }
@@ -161,14 +134,65 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-#links a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color */
-}
-#links a:hover {
-    text-decoration: underline; /* Add underline on hover */
+#links ul {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
 }
 
+#slider .card {
+    position: absolute;
+}
+  
+#slider .card:first-child {
+    z-index: 1;
+}
+  
+#slider .card:nth-child(){
+    z-index: 2;
+}
+  
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 120px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
 h4 {
     text-align: center;
+}
+
+#insta {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width: 60px;
+    border-radius: 0%;
+}
+
+#port {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 0%;
 }

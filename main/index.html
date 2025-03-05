@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeQuaveus Reed</title>
     <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="Images/output-onlinepngtools.png" type="image/x-icon">
 </head>
 <body>
-    <img id="mainIMG" src="https://tkcdn.tekedia.com/wp-content/uploads/2017/06/06173654/cybersecurity-nigeria-768x422.jpg" alt="header image">
     <header style="text-align: center; display: flexbox;">
         <nav id="nav">
-            <img id="logo" src="Images/pf image logo.jpg" alt="logo">
             <ul id="nav-links">
-                <a href="#container">Projects</a>
-                <a href="#home">About</a>
+                <a href="#slider">Projects</a>
+                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </ul>
         </nav>
@@ -25,16 +24,11 @@
                     <p id="cardSUM">Hello! I'm DeQuaveus Reed, a multidisciplinary developer based in Saginaw, MI. 2 years of experience, I thrive at the intersection of digital design and UX/UI. My passion lies in crafting seamless user experiences and visually compelling designs that resonate with audiences and drive engagement.</p>
                     <img id="me" src="Images/pf image 1.jpg" alt="quay reed">
             </div>
+
+            <h4>I have some of my projects below for you to see!</h2>
         </div>
     </section>
-    <section id="home">
-        <div id="aboutMe">
-            <p>Helpful, willful, and very outgoing. I am open to opportunities, willing to learn more, and motivated to reach greater heights. I am very proficient when it comes to tech-related topics. Ready to get work done and be a great asset.
-                Willing to relocate: Anywhere
-                Authorized to work in the US for any employer</p>
-    </div>
-    </section>
-    <section id="container">
+    <section id="slider">
         <!-- ADD EXAMPLE PROJECTS!!! -->
             <div class="card">
                 <h3>Project 1</h3>
@@ -49,6 +43,11 @@
                 <p>This is a description of project 3</p>
             </div>
     </section>
+    <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+      </div>
     <section>
         <div id="skills">
                 <h2><img id="skillimg" src="Images/pngegg.png" alt="">Skills</h2>
@@ -71,16 +70,15 @@
                 <p><b>4942 Fontaine Blvd Apt C3, 48603, Saginaw, MI</b></p>
             </div>
             <div id="links">
-                <h2>My social media links are:</h2>
                 <ul>
-                    <li><a href="https://https://www.instagram.com/maitreya.vfx/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/dequaveus-reed-580571258/">LinkedIN</a></li>
+                    <a href="https://www.instagram.com/maitreya.vfx/"><img id="insta" src="Images/vecteezy_instagram-logo-png-instagram-icon-transparent_18930460.png" alt="quay reed"></a>
+                    <a href="https://www.linkedin.com/in/dequaveus-reed-580571258/"><img id="port" src="Images/pngegg (1).png" alt="quay reed"></a>
                 </ul>
             </div>
     </section>
     <footer>
         <h4 id="foot">&copy; DeQuaveus Reed</h4>
     </footer>
-    <script src="scripts/another-script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
