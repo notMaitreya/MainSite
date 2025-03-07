@@ -10,7 +10,7 @@ function changeSlide(n) { //function that controls the slider
       dots[i].className = dots[i].className.replace(' active', '');
     }
     
-    if (n != undefined) {
+    if (n !== undefined) {
         currentImg = n;
     } else {
         currentImg = (currentImg + 1) % imgs.length; // update the index number
@@ -19,7 +19,7 @@ function changeSlide(n) { //function that controls the slider
     imgs[currentImg].style.opacity = 1;
     dots[currentImg].className += ' active';
 
-if (n != undefined) {
+if (n !== undefined) {
     clearInterval(timer);
     timer = setInterval(changeSlide, interval);
     currentImg = n;
@@ -28,3 +28,4 @@ if (n != undefined) {
 }
 
 changeSlide(currentImg);
+export default changeSlide;
