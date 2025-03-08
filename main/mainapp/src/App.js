@@ -5,6 +5,7 @@ import instaImg from './images/instagram.png';
 import portImg from './images/linkedin.png';
 import mainImg from './images/pf image 1.jpg';
 import skillImg from './images/pngegg.png';
+import Slider from './components/Slider';
 
 
 function App() {
@@ -36,25 +37,10 @@ function App() {
             <h4>I have some of my projects below for you to see!</h4>
         </div>
     </section>
-    <section id="slider" style={{opacity: 1}}>
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>This is a description of project 1</p>
-            </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>This is a description of project 2</p>
-            </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>This is a description of project 3</p>
-            </div>
+    <section id="slider">
+        <Slider />
     </section>
-    <div class="navigation-button">
-        <span class="dot active" onclick="changeSlide(0)"></span>
-        <span class="dot" onclick="changeSlide(1)"></span>
-        <span class="dot" onclick="changeSlide(2)"></span>
-      </div>
+    
     <section>
         <div id="skills">
                 <h2><img id="skillimg" src={skillImg} alt="hammer"/>Skills</h2>
